@@ -1,6 +1,7 @@
 import React from "react";
 import useModal from "react-hooks-use-modal";
 import AddTodoModule from "../AddTodoModule/AddTodoModule";
+import TextField from "@material-ui/core/TextField";
 
 import "./TodoList.scss";
 
@@ -14,7 +15,11 @@ function TodoList() {
   };
   return (
     <div className="TodoList">
-      <input placeholder="Add Todo" onClick={openAddTodoModule} readOnly />
+      <TextField
+        id="standard-basic"
+        label="Add New Todo"
+        onClick={openAddTodoModule}
+      />
       <ul>
         <li>Make Bread</li>
         <li>Bake Bread</li>
