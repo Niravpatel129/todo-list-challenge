@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: gainsboro;
+  padding-top: 5%;
+  height: 100vh;
+  .TodoApp {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+  }
+}
