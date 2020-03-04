@@ -26,7 +26,7 @@ const values = [
   }
 ];
 
-function AddTodoModule() {
+function AddTodoModule({ closeModal }) {
   const classes = useStyles();
 
   const [formValues, setFormValues] = useState({
@@ -42,6 +42,7 @@ function AddTodoModule() {
 
   const handleFormSubmit = () => {
     console.log(formValues);
+    closeModal();
   };
 
   return (

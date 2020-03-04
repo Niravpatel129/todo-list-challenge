@@ -1,4 +1,6 @@
 .TodoList {
+  display: flex;
+  flex-direction: column;
   ul {
     text-decoration: none;
     list-style: none;
